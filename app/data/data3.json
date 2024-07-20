@@ -1,0 +1,56 @@
+[
+  {
+    "column": "MBL",
+    "value": "ㄱ",
+    "nodeId": "MBL1",
+    "parentId": null,
+    "children": [
+      {
+        "column": "HBL",
+        "value": "ㄴㄱ",
+        "nodeId": "MBL1HBL1",
+        "parentId": "MBL1"
+      },
+      {
+        "column": "HBL",
+        "value": "ㄴㄴ",
+        "nodeId": "MBL1HBL2",
+        "parentId": "MBL1",
+        "children": [
+          {
+            "column": "PO",
+            "value": "ㄷㄱ",
+            "nodeId": "MBL1HBL2PO1",
+            "parentId": "MBL1HBL2"
+          },
+          {
+            "column": "PO",
+            "value": "ㄷㄴ",
+            "nodeId": "MBL1HBL2PO2",
+            "parentId": "MBL1HBL2"
+          }
+        ]
+      },
+      {
+        "column": "HBL",
+        "value": "ㄴㄷ",
+        "nodeId": "MBL1HBL3",
+        "parentId": "MBL1",
+        "children": [
+          {
+            "column": "PO",
+            "value": "ㄷㄱ",
+            "nodeId": "MBL1HBL3PO1",
+            "parentId": "MBL1HBL3"
+          },
+          {
+            "column": "PO",
+            "value": "ㄷㄴ",
+            "nodeId": "MBL1HBL3PO2",
+            "parentId": "MBL1HBL3"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "title": "MBL",
+    "id": "A",
+    "group": "A",
+    "value": "ㄱ",
+    "children": [
+      {
+        "title": "HBL",
+        "id": "B",
+        "value": "ㄴㄱ"
+      },
+      {
+        "title": "HBL",
+        "id": "B",
+        "value": "ㄴㄴ",
+        "children": [
+          {
+            "title": "PO",
+            "id": "C",
+            "value": "ㄷㄱ"
+          },
+          {
+            "title": "PO",
+            "id": "C",
+            "value": "ㄷㄴ"
+          }
+        ]
+      },
+      {
+        "title": "HBL",
+        "id": "B",
+        "value": "ㄴㄷ",
+        "children": [
+          {
+            "title": "PO",
+            "id": "C",
+            "value": "ㄷㄱ"
+          },
+          {
+            "title": "PO",
+            "id": "C",
+            "value": "ㄷㄴ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "MBL",
+    "id": "A",
+    "value": "A",
+    "children": [
+      {
+        "title": "HBL",
+        "id": "B",
+        "value": "BA"
+      },
+      {
+        "title": "HBL",
+        "id": "B",
+        "value": "BB",
+        "children": [
+          {
+            "title": "PO",
+            "id": "C",
+            "value": "CA"
+          },
+          {
+            "title": "PO",
+            "id": "C",
+            "value": "CB"
+          }
+        ]
+      },
+      {
+        "title": "HBL",
+        "id": "B",
+        "value": "BC",
+        "children": [
+          {
+            "title": "PO",
+            "id": "C",
+            "value": "CA"
+          },
+          {
+            "title": "PO",
+            "id": "C",
+            "value": "CB"
+          }
+        ]
+      }
+    ]
+  }
+]
