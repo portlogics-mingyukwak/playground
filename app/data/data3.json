@@ -1,31 +1,31 @@
 [
   {
     "column": "MBL",
-    "value": "ㄱ",
+    "value": "YMJAI226330753",
     "nodeId": "MBL1",
     "parentId": null,
     "children": [
       {
         "column": "HBL",
-        "value": "ㄴㄱ",
+        "value": "BSCSZN241519",
         "nodeId": "MBL1HBL1",
         "parentId": "MBL1"
       },
       {
         "column": "HBL",
-        "value": "ㄴㄴ",
+        "value": "BSCSZN241520",
         "nodeId": "MBL1HBL2",
         "parentId": "MBL1",
         "children": [
           {
             "column": "PO",
-            "value": "ㄷㄱ",
+            "value": "2024064019",
             "nodeId": "MBL1HBL2PO1",
             "parentId": "MBL1HBL2"
           },
           {
             "column": "PO",
-            "value": "ㄷㄴ",
+            "value": "2024064128",
             "nodeId": "MBL1HBL2PO2",
             "parentId": "MBL1HBL2"
           }
@@ -33,21 +33,75 @@
       },
       {
         "column": "HBL",
-        "value": "ㄴㄷ",
+        "value": "BSCSZN241519",
         "nodeId": "MBL1HBL3",
         "parentId": "MBL1",
         "children": [
           {
             "column": "PO",
-            "value": "ㄷㄱ",
+            "value": "2024064130",
             "nodeId": "MBL1HBL3PO1",
             "parentId": "MBL1HBL3"
           },
           {
             "column": "PO",
-            "value": "ㄷㄴ",
+            "value": "2024064122",
             "nodeId": "MBL1HBL3PO2",
             "parentId": "MBL1HBL3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "column": "MBL",
+    "value": "YMJAI226330752",
+    "nodeId": "MBL2",
+    "parentId": null,
+    "children": [
+      {
+        "column": "HBL",
+        "value": "AJKDG12BNBV87",
+        "nodeId": "MBL2HBL1",
+        "parentId": "MBL2"
+      },
+      {
+        "column": "HBL",
+        "value": "AJKDG12BNBV88",
+        "nodeId": "MBL2HBL2",
+        "parentId": "MBL2",
+        "children": [
+          {
+            "column": "PO",
+            "value": "2024064126",
+            "nodeId": "MBL2HBL2PO1",
+            "parentId": "MBL2HBL2"
+          },
+          {
+            "column": "PO",
+            "value": "2024064204",
+            "nodeId": "MBL2HBL2PO2",
+            "parentId": "MBL2HBL2"
+          }
+        ]
+      },
+      {
+        "column": "HBL",
+        "value": "AJKDG12BNBV89",
+        "nodeId": "MBL2HBL3",
+        "parentId": "MBL2",
+        "children": [
+          {
+            "column": "PO",
+            "value": "2024064123",
+            "nodeId": "MBL2HBL3PO1",
+            "parentId": "MBL2HBL3"
+          },
+          {
+            "column": "PO",
+            "value": "2024064125",
+            "nodeId": "MBL2HBL3PO2",
+            "parentId": "MBL2HBL3"
           }
         ]
       }

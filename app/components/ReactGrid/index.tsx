@@ -15,6 +15,7 @@ import "@silevis/reactgrid/styles.css";
 import { useState } from "react";
 import serverData from "../../data/data3.json";
 import { FlattenedDataNode } from "@/app/types/data";
+import { DisabledCell, DisabledCellTemplate } from "./DisabledCellTemplate";
 
 const { result, columns } = flattenData(serverData);
 
@@ -26,14 +27,29 @@ const headerRow: Row = {
   })),
 };
 
-const getRows = (data: FlattenedDataNode[]): Row[] => [
+const getRows = (
+  data: FlattenedDataNode[],
+): Row<DefaultCellTypes | DisabledCell>[] => [
   headerRow,
-  ...data.map<Row>((row, idx) => ({
+  ...data.map<Row<DefaultCellTypes | DisabledCell>>((row, idx) => ({
     rowId: idx,
     cells: [
-      { type: "text", text: String(row.MBL.value ?? "") },
-      { type: "text", text: String(row.HBL.value ?? "") },
-      { type: "text", text: String(row.PO?.value ?? "") },
+      // 이전 행 정보를 기억해서 이전 행과 값이 같으면 disabled 처리
+      {
+        type: row.MBL.disabled ? "disabled" : "text",
+        text: String(row.MBL.value ?? ""),
+        disabled: row.MBL.disabled,
+      },
+      {
+        type: row.HBL.disabled ? "disabled" : "text",
+        text: String(row.HBL.value ?? ""),
+        disabled: row.HBL.disabled,
+      },
+      {
+        type: row.PO?.disabled ? "disabled" : "text",
+        text: String(row.PO?.value ?? ""),
+        disabled: row.PO?.disabled,
+      },
     ],
   })),
 ];
@@ -80,6 +96,7 @@ export default function RGExample() {
       enableRowSelection
       enableFillHandle
       onContextMenu={simpleHandleContextMenu}
+      customCellTemplates={{ disabled: new DisabledCellTemplate() }}
     />
   );
 }

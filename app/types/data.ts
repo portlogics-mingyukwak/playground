@@ -12,8 +12,8 @@ interface RowValues extends NodeMetadata {
 export interface DataNode extends RowValues {
   column: string;
   children?: DataNode[];
-};
+}
 
 export type FlattenedDataNode = {
-  [key: string]: RowValues;
+  [key: string]: RowValues & { disabled: boolean }; // { MBL: { value: "123", nodeId: "1", parentId: null, disabled: false } }
 };
